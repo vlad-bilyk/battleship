@@ -1,4 +1,4 @@
-from task6 import battle_funcs
+import battle_funcs
 
 # DATA = battle_funcs.read_field('field.txt')
 # DATA = battle.generate_field()

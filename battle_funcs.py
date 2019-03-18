@@ -28,7 +28,7 @@ def read_field(filename):
 def has_ship(data, tup):
     for lst in data:
         if tup in lst:
-            return lst[1] == u"\u25A1"
+            return lst[1] == "*"
 
 
 # creating functions for each direction
@@ -412,7 +412,7 @@ def generate_field():
                     coordinates.remove(cord)
                     for lst in field:
                         if cord in lst:
-                            lst[1] = u"\u25A1"
+                            lst[1] = "*"
 
                 to_delete = []
                 for i in range(size + 2):
@@ -437,7 +437,7 @@ def generate_field():
                         pass
                     for lst in field:
                         if cord in lst:
-                            lst[1] = u"\u25A1"
+                            lst[1] = "*"
 
                 to_delete = []
                 for i in range(size + 2):

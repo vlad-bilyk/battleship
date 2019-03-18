@@ -1,5 +1,5 @@
-from task6 import battle_classes
-from task6 import battle_funcs
+import battle_classes
+import battle_funcs
 
 ship = battle_classes.Ship(("A", 1), True, 3)
 ship1 = battle_classes.Ship(("B", 3), False, 2)

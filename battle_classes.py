@@ -1,6 +1,6 @@
 import copy
 
-from task6 import battle_funcs
+import battle_funcs
 
 class Ship:
 
@@ -71,7 +71,10 @@ class Field(Ship):
         result = self.field
         for lst in result:
             if len(lst) == 2:
-                lst[1] = u"\u25A1"
+                if lst[1] == '0':
+                    lst[1] = " "
+                elif lst[1] == "*":
+                    lst[1] = "*"
             elif len(lst) > 2:
                 if "hit" in lst:
                     lst[1] = 'O'
@@ -89,10 +92,11 @@ class Field(Ship):
                     lst.append("ship hit")
 
 
-class Player:
+class Player(Field):
 
     def __init__(self, name):
         self.name = name
+        self.field = Field()
 
     def read_position(self):
         result = 0
