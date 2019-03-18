@@ -1,4 +1,4 @@
-# morskoi_boi
+# battleship
 
 lab7
 task6 (Seabattle)
