@@ -1,6 +1,6 @@
 # battleship
 
-lab7
+lab6
 task6 (Seabattle)
    
   
